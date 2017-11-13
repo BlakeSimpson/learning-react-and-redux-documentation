@@ -1,13 +1,30 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import TableOfContents from '../components/TableOfContents';
 
-const IndexPage = () => (
+const IndexPage = ({ data }) => (
   <div>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
-  </div>
-)
+    <h1>Table of Contents</h1>
 
-export default IndexPage
+    <TableOfContents edges={data.allMarkdownRemark.edges} />
+  </div>
+);
+
+export const query = graphql`
+  query PostsQuery {
+    allMarkdownRemark {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            step
+          }
+        }
+      }
+    }
+  }
+`;
+
+export default IndexPage;
