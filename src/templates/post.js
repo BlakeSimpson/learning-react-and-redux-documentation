@@ -1,20 +1,23 @@
 import React from 'react';
 
 import TableOfContents from '../components/TableOfContents';
+import { NextStep } from '../components/NextStep';
 
 export default ({ data }) => {
   const post = data.markdownRemark;
   const { title, step } = post.frontmatter;
 
-  console.log(data);
-
   return (
     <div>
       <TableOfContents edges={data.allMarkdownRemark.edges} />
 
+      {step && <h3 className="current-step">Step {step}</h3>}
       <h1>{title}</h1>
-      {step && <h3>Step {step}</h3>}
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
+
+      {step && (
+        <NextStep step={step + 1} edges={data.allMarkdownRemark.edges} />
+      )}
     </div>
   );
 };

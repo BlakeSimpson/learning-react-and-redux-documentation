@@ -1,13 +1,10 @@
-# gatsby-starter-default
-The default Gatsby starter
+# Learning React and Redux
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/)
+The documentation website for my
+[Learning React and Redux tutorial](https://github.com/BlakeSimpson/learning-react-and-redux-tutorial).
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-```
-gatsby new gatsby-example-site
-```
+[Read the documentation](https://blakesimpson.github.io/learning-react-and-redux-documentation/)
+on GitHub pages.
 
-## Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+This documentation website is produced with
+[GatsbyJS](https://www.gatsbyjs.org/).

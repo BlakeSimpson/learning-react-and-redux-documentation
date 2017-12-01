@@ -3,19 +3,15 @@ import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
 
+require('prismjs/themes/prism.css');
 import './index.css';
 
 const Header = ({ title }) => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem'
-    }}
-  >
+  <div id="header-wrapper-outer">
     <div
+      id="header-wrapper"
       style={{
         margin: '0 auto',
-        maxWidth: 960,
         padding: '1.45rem 1.0875rem'
       }}
     >
@@ -24,7 +20,9 @@ const Header = ({ title }) => (
           to="/"
           style={{
             color: 'white',
-            textDecoration: 'none'
+            textDecoration: 'none',
+            fontSize: '0.9em',
+            lineHeight: '1.5em'
           }}
         >
           {title}
@@ -39,15 +37,18 @@ const TemplateWrapper = ({ children, data }) => (
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' }
+        {
+          name: 'description',
+          content: 'A tutorial for learning React and Redux'
+        },
+        { name: 'keywords', content: 'react, redux, tutorial' }
       ]}
     />
     <Header title={data.site.siteMetadata.title} />
     <div
+      id="content-wrapper"
       style={{
         margin: '0 auto',
-        maxWidth: 960,
         padding: '0px 1.0875rem 1.45rem',
         paddingTop: 0
       }}
