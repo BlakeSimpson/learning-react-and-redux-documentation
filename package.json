@@ -7,8 +7,12 @@
     "gatsby": "^1.9.102",
     "gatsby-link": "^1.6.24",
     "gatsby-plugin-react-helmet": "^1.0.8",
+    "gatsby-plugin-sharp": "^1.6.22",
+    "gatsby-remark-copy-linked-files": "^1.5.22",
+    "gatsby-remark-prismjs": "^1.2.10",
+    "gatsby-remark-responsive-image": "^1.0.0-alpha13-alpha.435e0178",
     "gatsby-source-filesystem": "^1.5.8",
-    "gatsby-transformer-remark": "^1.7.20"
+    "gatsby-transformer-remark": "^1.7.23"
   },
   "keywords": [
     "gatsby"

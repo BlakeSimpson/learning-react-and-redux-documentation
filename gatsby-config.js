@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Tutorial`
+    title: `Learning React and Redux`
   },
   plugins: [
     {
@@ -10,7 +10,22 @@ module.exports = {
         path: `${__dirname}/src/pages`
       }
     },
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-responsive-image`,
+            options: {
+              maxWidth: 800
+            }
+          },
+          {
+            resolve: `gatsby-remark-prismjs`
+          }
+        ]
+      }
+    },
     `gatsby-plugin-react-helmet`
   ]
 };

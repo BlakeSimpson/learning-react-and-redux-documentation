@@ -212,11 +212,12 @@ img {
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
+  padding: 10px;
   margin-bottom: 1.45rem;
+  //border: 1px solid #ddd;
+  box-shadow: 0 3px 3px rgba(0,0,0,1);
+  background: #eee;
+  border-radius: 5px;
 }
 h1 {
   margin-left: 0;
@@ -436,14 +437,11 @@ fieldset {
   margin-bottom: 1.45rem;
 }
 blockquote {
-  margin-left: 1.45rem;
-  margin-right: 1.45rem;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0;
   margin-bottom: 1.45rem;
+  border-left: 4px solid #ddd;
 }
 form {
   margin-left: 0;
@@ -599,6 +597,8 @@ code {
   padding: 0;
   padding-top: 0.2em;
   padding-bottom: 0.2em;
+  padding-left: 0.4rem;
+  margin-right: 0.2rem;
 }
 pre code {
   background: none;
@@ -621,4 +621,34 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+#toc {
+  position: absolute;
+  top: 120px;
+  right: 15px;
+  padding: 20px 10px 5px;
+  background: #eee;
+  border-radius: 5px;
+  margin: 0 0 15px 15px;
+  box-shadow: 0 0 1px 1px rgba(0,0,0,0.2);
+}
+#toc ul {
+  margin-bottom: 0;
+  list-style-type: square;
+}
+
+
+.gatsby-resp-image-wrapper {
+  border-radius: 5px;
+  box-shadow: 0 0 3px rgba(0,0,0,0.5);
+  padding-bottom: 13px;
+}
+
+.gatsby-resp-image-background-image {
+  border-radius: 5px;
+}
+
+.gatsby-highlight {
+  margin-bottom: 20px;
 }
