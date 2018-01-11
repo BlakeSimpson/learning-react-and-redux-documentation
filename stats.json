@@ -1,114 +1,122 @@
 {
   "assetsByChunkName": {
     "path---tutorial-steps-14-managing-favourites-with-redux": [
-      "path---tutorial-steps-14-managing-favourites-with-redux-386f9df2569f9df338b9.js",
-      "path---tutorial-steps-14-managing-favourites-with-redux-386f9df2569f9df338b9.js.map"
+      "path---tutorial-steps-14-managing-favourites-with-redux-ea48198312dca31ff0b9.js",
+      "path---tutorial-steps-14-managing-favourites-with-redux-ea48198312dca31ff0b9.js.map"
     ],
     "path---tutorial-steps-12-favourites-list": [
-      "path---tutorial-steps-12-favourites-list-59af646e3fb9447a38af.js",
-      "path---tutorial-steps-12-favourites-list-59af646e3fb9447a38af.js.map"
+      "path---tutorial-steps-12-favourites-list-0a38a5393a44f71325a1.js",
+      "path---tutorial-steps-12-favourites-list-0a38a5393a44f71325a1.js.map"
     ],
     "component---src-pages-index-js": [
       "component---src-pages-index-js-74e63cc5e6a75c49970b.js",
       "component---src-pages-index-js-74e63cc5e6a75c49970b.js.map"
     ],
     "path---tutorial-steps-8-webpack-dev-server": [
-      "path---tutorial-steps-8-webpack-dev-server-f71c9cd65ec953fcbf24.js",
-      "path---tutorial-steps-8-webpack-dev-server-f71c9cd65ec953fcbf24.js.map"
+      "path---tutorial-steps-8-webpack-dev-server-4ddfc951ec25b9a63197.js",
+      "path---tutorial-steps-8-webpack-dev-server-4ddfc951ec25b9a63197.js.map"
     ],
     "path---tutorial-steps-4-eslint-and-prettier": [
-      "path---tutorial-steps-4-eslint-and-prettier-423c603fc0a96bc73648.js",
-      "path---tutorial-steps-4-eslint-and-prettier-423c603fc0a96bc73648.js.map"
+      "path---tutorial-steps-4-eslint-and-prettier-b747e1901f0427c970fd.js",
+      "path---tutorial-steps-4-eslint-and-prettier-b747e1901f0427c970fd.js.map"
     ],
     "path---": [
       "path----d56a5c009c65cb248351.js",
       "path----d56a5c009c65cb248351.js.map"
     ],
     "path---tutorial-steps-2-webpack": [
-      "path---tutorial-steps-2-webpack-131e7547a32e50c1bc3e.js",
-      "path---tutorial-steps-2-webpack-131e7547a32e50c1bc3e.js.map"
+      "path---tutorial-steps-2-webpack-7553a47abb01fcb13ec2.js",
+      "path---tutorial-steps-2-webpack-7553a47abb01fcb13ec2.js.map"
     ],
     "path---tutorial-steps-5-starting-react": [
-      "path---tutorial-steps-5-starting-react-bedd27a8ea80e9ba29d6.js",
-      "path---tutorial-steps-5-starting-react-bedd27a8ea80e9ba29d6.js.map"
+      "path---tutorial-steps-5-starting-react-31a4d5e6cd5da01c752f.js",
+      "path---tutorial-steps-5-starting-react-31a4d5e6cd5da01c752f.js.map"
     ],
     "component---src-layouts-index-js": [
       "component---src-layouts-index-js-616843d721f40ddfd4aa.js",
       "component---src-layouts-index-js-616843d721f40ddfd4aa.js.map"
     ],
+    "path---tutorial-steps-16-ids-for-points": [
+      "path---tutorial-steps-16-ids-for-points-7f025b2126fd4a194a91.js",
+      "path---tutorial-steps-16-ids-for-points-7f025b2126fd4a194a91.js.map"
+    ],
     "path---tutorial-getting-started": [
-      "path---tutorial-getting-started-351e08c7f93680584a03.js",
-      "path---tutorial-getting-started-351e08c7f93680584a03.js.map"
+      "path---tutorial-getting-started-83917138c26b88024ad6.js",
+      "path---tutorial-getting-started-83917138c26b88024ad6.js.map"
+    ],
+    "path---tutorial-steps-17-testing-with-jest": [
+      "path---tutorial-steps-17-testing-with-jest-09f14b13bac7c4de613f.js",
+      "path---tutorial-steps-17-testing-with-jest-09f14b13bac7c4de613f.js.map"
     ],
     "path---tutorial-steps-11-favourite-places": [
-      "path---tutorial-steps-11-favourite-places-44b413b3e78b4ddc14d3.js",
-      "path---tutorial-steps-11-favourite-places-44b413b3e78b4ddc14d3.js.map"
+      "path---tutorial-steps-11-favourite-places-0b5bfa8cfbaa78a3895d.js",
+      "path---tutorial-steps-11-favourite-places-0b5bfa8cfbaa78a3895d.js.map"
     ],
     "path---tutorial-links": [
-      "path---tutorial-links-68bc8bbe1115f65e98b3.js",
-      "path---tutorial-links-68bc8bbe1115f65e98b3.js.map"
+      "path---tutorial-links-eaf4715ce675378bfd5f.js",
+      "path---tutorial-links-eaf4715ce675378bfd5f.js.map"
     ],
     "path---index": [
-      "path---index-9b05d29cf89b28535b4c.js",
-      "path---index-9b05d29cf89b28535b4c.js.map"
+      "path---index-fc74e11dcaa2304dcd41.js",
+      "path---index-fc74e11dcaa2304dcd41.js.map"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
       "component---src-pages-404-js-4503918ea3a16cfcdb75.js.map"
     ],
     "path---tutorial-steps-9-adding-points-to-the-map": [
-      "path---tutorial-steps-9-adding-points-to-the-map-44a6736c329fac43e1c1.js",
-      "path---tutorial-steps-9-adding-points-to-the-map-44a6736c329fac43e1c1.js.map"
+      "path---tutorial-steps-9-adding-points-to-the-map-5ef5a10430f3a66df66b.js",
+      "path---tutorial-steps-9-adding-points-to-the-map-5ef5a10430f3a66df66b.js.map"
     ],
     "commons": [
       "commons-8d5048b07969403445b0.js",
       "commons-8d5048b07969403445b0.js.map"
     ],
     "path---tutorial-steps-7-styling-with-postcss": [
-      "path---tutorial-steps-7-styling-with-postcss-9db5d303b94d7f4dc0a8.js",
-      "path---tutorial-steps-7-styling-with-postcss-9db5d303b94d7f4dc0a8.js.map"
+      "path---tutorial-steps-7-styling-with-postcss-52b0b9380e1c9cf9f086.js",
+      "path---tutorial-steps-7-styling-with-postcss-52b0b9380e1c9cf9f086.js.map"
     ],
     "path---404-html": [
       "path---404-html-a0e39f21c11f6a62c5ab.js",
       "path---404-html-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---tutorial-steps-15-removing-favourites-from-the-list": [
-      "path---tutorial-steps-15-removing-favourites-from-the-list-826e006cf093605944bf.js",
-      "path---tutorial-steps-15-removing-favourites-from-the-list-826e006cf093605944bf.js.map"
+      "path---tutorial-steps-15-removing-favourites-from-the-list-95fd328ec7d47d135480.js",
+      "path---tutorial-steps-15-removing-favourites-from-the-list-95fd328ec7d47d135480.js.map"
     ],
     "component---src-templates-post-js": [
       "component---src-templates-post-js-00a9cc51cc7412ed4550.js",
       "component---src-templates-post-js-00a9cc51cc7412ed4550.js.map"
     ],
     "path---tutorial-steps-10-pointer-details": [
-      "path---tutorial-steps-10-pointer-details-0f9201fb336ea3fa9a85.js",
-      "path---tutorial-steps-10-pointer-details-0f9201fb336ea3fa9a85.js.map"
+      "path---tutorial-steps-10-pointer-details-b8e407bcf55ebb772980.js",
+      "path---tutorial-steps-10-pointer-details-b8e407bcf55ebb772980.js.map"
     ],
     "path---tutorial-steps-1-setup-package": [
-      "path---tutorial-steps-1-setup-package-c30d21a3e1e977129a16.js",
-      "path---tutorial-steps-1-setup-package-c30d21a3e1e977129a16.js.map"
+      "path---tutorial-steps-1-setup-package-ad1d836d54d28dc81c90.js",
+      "path---tutorial-steps-1-setup-package-ad1d836d54d28dc81c90.js.map"
     ],
     "app": [
-      "app-7a67c8dc84873d1b133d.js",
+      "app-65e0f0a6b28f31c00c34.js",
       "build-js-styles.css",
-      "app-7a67c8dc84873d1b133d.js.map",
+      "app-65e0f0a6b28f31c00c34.js.map",
       "build-js-styles.css.map"
     ],
     "path---tutorial-steps-6-adding-the-map": [
-      "path---tutorial-steps-6-adding-the-map-76a8a7f54df5f57dfc4e.js",
-      "path---tutorial-steps-6-adding-the-map-76a8a7f54df5f57dfc4e.js.map"
+      "path---tutorial-steps-6-adding-the-map-d34899d1bef442e2cc69.js",
+      "path---tutorial-steps-6-adding-the-map-d34899d1bef442e2cc69.js.map"
     ],
     "path---tutorial-steps-13-adding-redux": [
-      "path---tutorial-steps-13-adding-redux-8958eb6b57d094481e3f.js",
-      "path---tutorial-steps-13-adding-redux-8958eb6b57d094481e3f.js.map"
+      "path---tutorial-steps-13-adding-redux-d946f968b9219e99964f.js",
+      "path---tutorial-steps-13-adding-redux-d946f968b9219e99964f.js.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
       "path---404-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---tutorial-steps-3-babel": [
-      "path---tutorial-steps-3-babel-91dc0556859d011f3979.js",
-      "path---tutorial-steps-3-babel-91dc0556859d011f3979.js.map"
+      "path---tutorial-steps-3-babel-91eff001299077647cdc.js",
+      "path---tutorial-steps-3-babel-91eff001299077647cdc.js.map"
     ]
   }
 }
