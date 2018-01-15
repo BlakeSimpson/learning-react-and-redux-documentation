@@ -1,2 +1,0 @@
-webpackJsonp([0x81b8806e4260],{294:function(t,e){t.exports={data:{allMarkdownRemark:{edges:[{node:{fields:{slug:"/tutorial/getting-started/"},frontmatter:{title:"Getting Started",step:1}}},{node:{fields:{slug:"/tutorial/links/"},frontmatter:{title:"Links",step:null}}}]}},pathContext:{}}}});
-//# sourceMappingURL=path---index-985c438fe26a07589120.js.map
