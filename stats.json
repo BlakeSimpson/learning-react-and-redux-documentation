@@ -45,8 +45,8 @@
       "path---tutorial-getting-started-e5e29a11b1114056bebb.js.map"
     ],
     "path---tutorial-steps-17-testing-with-jest": [
-      "path---tutorial-steps-17-testing-with-jest-202c11fb93aaa3a97ac0.js",
-      "path---tutorial-steps-17-testing-with-jest-202c11fb93aaa3a97ac0.js.map"
+      "path---tutorial-steps-17-testing-with-jest-b413f39f0821d147ec97.js",
+      "path---tutorial-steps-17-testing-with-jest-b413f39f0821d147ec97.js.map"
     ],
     "path---tutorial-steps-11-favourite-places": [
       "path---tutorial-steps-11-favourite-places-b38aca5991752194dccf.js",
@@ -109,8 +109,8 @@
       "path---tutorial-steps-20-jest-component-configuration-28945e24b1d276892954.js.map"
     ],
     "component---src-templates-post-js": [
-      "component---src-templates-post-js-f0af377451dd6a283812.js",
-      "component---src-templates-post-js-f0af377451dd6a283812.js.map"
+      "component---src-templates-post-js-ab03e3d4d2aab2d01246.js",
+      "component---src-templates-post-js-ab03e3d4d2aab2d01246.js.map"
     ],
     "path---tutorial-steps-25-test-the-pointer": [
       "path---tutorial-steps-25-test-the-pointer-34c916f7aa162bb43d75.js",
@@ -129,9 +129,9 @@
       "path---tutorial-steps-23-test-the-app-component-3f44e1147e8635d025f2.js.map"
     ],
     "app": [
-      "app-9e70fba418826e0fb0ed.js",
+      "app-4d93ab4f2873cf82815b.js",
       "build-js-styles.css",
-      "app-9e70fba418826e0fb0ed.js.map",
+      "app-4d93ab4f2873cf82815b.js.map",
       "build-js-styles.css.map"
     ],
     "path---tutorial-steps-6-adding-the-map": [
