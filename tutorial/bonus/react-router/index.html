@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+ <html><head><meta charset="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><link rel="preload" href="/learning-react-and-redux-documentation/component---src-layouts-index-js-df046e3d82d9aa5cb2d4.js" as="script"/><link rel="preload" href="/learning-react-and-redux-documentation/component---src-templates-post-js-3a17a3be098b31ee6856.js" as="script"/><link rel="preload" href="/learning-react-and-redux-documentation/path---tutorial-bonus-react-router-e106072ae71d89d437ee.js" as="script"/><link rel="preload" href="/learning-react-and-redux-documentation/app-289c5076e4386285ad66.js" as="script"/><link rel="preload" href="/learning-react-and-redux-documentation/commons-8d5048b07969403445b0.js" as="script"/><script id="webpack-manifest">
+            //<![CDATA[
+            window.webpackManifest = {"231608221292675":"app-289c5076e4386285ad66.js","195351340454287":"component---src-templates-post-js-3a17a3be098b31ee6856.js","162898551421021":"component---src-pages-404-js-4503918ea3a16cfcdb75.js","35783957827783":"component---src-pages-index-js-95bffd59973b41e8570c.js","60335399758886":"path----d56a5c009c65cb248351.js","135563891114638":"path---tutorial-links-620353112bbfe0b2a026.js","118799121156847":"path---tutorial-getting-started-d7382e8dfdb9e55d9437.js","214057910109245":"path---tutorial-steps-1-setup-package-0bf54b8a8350f698299a.js","234256260090605":"path---tutorial-bonus-react-router-e106072ae71d89d437ee.js","17971265750924":"path---tutorial-steps-12-favourites-list-d75f83d38be57cf03214.js","237949882381156":"path---tutorial-steps-13-adding-redux-38e25d8cab07b469cef3.js","206805960689390":"path---tutorial-steps-10-pointer-details-70dbecf95da8084dec89.js","1033659491245":"path---tutorial-steps-14-managing-favourites-with-redux-7340693e5f55c84b5a9a.js","182874657879501":"path---tutorial-steps-18-testing-redux-actions-f4447c79da6ff31900b4.js","118277567452233":"path---tutorial-steps-16-ids-for-points-30351bb9d776cdae9342.js","181225226889932":"path---tutorial-steps-15-removing-favourites-from-the-list-f5eefd19b72b66313182.js","132978315027406":"path---tutorial-steps-11-favourite-places-7a9cc61b515ac3f431ff.js","119454655196054":"path---tutorial-steps-17-testing-with-jest-ca50e8421cb634b72ee0.js","164006660818621":"path---tutorial-steps-19-testing-redux-reducers-2d0d6910b075c6154667.js","86486738803091":"path---tutorial-steps-2-webpack-252d3b032229187d988d.js","191994760325403":"path---tutorial-steps-20-jest-component-configuration-ce8d0c96d28ea32c31e0.js","227242793964653":"path---tutorial-steps-23-test-the-app-component-e6e26ffbb340d6f5a052.js","164153876557642":"path---tutorial-steps-22-testing-connected-components-1a6f9a4376aa2a9f17a3.js","179161860437318":"path---tutorial-steps-21-testing-the-map-98691f7c55273f2d482c.js","198134931227272":"path---tutorial-steps-25-test-the-pointer-63ea6d28f4620acda59a.js","280001054470434":"path---tutorial-steps-3-babel-9f86ac3328040653a9a8.js","46414529011902":"path---tutorial-steps-4-eslint-and-prettier-5e7accfc68b2cffbb473.js","169013477403742":"path---tutorial-steps-24-test-favourites-list-f5a6b040420a8dbac5f0.js","235804080668192":"path---tutorial-steps-6-adding-the-map-9aa7989e668e5a998e07.js","97838741517688":"path---tutorial-steps-5-starting-react-dd11a03c9eee88a30238.js","46098157417510":"path---tutorial-steps-8-webpack-dev-server-d4c9512ec37fa06cf486.js","172606999645938":"path---tutorial-steps-7-styling-with-postcss-8560514788d3682837f3.js","165467095976884":"path---tutorial-steps-9-adding-points-to-the-map-c7811f0291d1eadab4e4.js","254022195166212":"path---404-a0e39f21c11f6a62c5ab.js","142629428675168":"path---index-bc6327bac4ce75b6851d.js","178698757827068":"path---404-html-a0e39f21c11f6a62c5ab.js","114276838955818":"component---src-layouts-index-js-df046e3d82d9aa5cb2d4.js"}
+            //]]>
+            </script><title data-react-helmet="true">Learning React and Redux</title><meta data-react-helmet="true" name="description" content="A tutorial for learning React and Redux"/><meta data-react-helmet="true" name="keywords" content="react, redux, tutorial"/><script>
+  !function(e,t,r){function n(){for(;d[0]&&"loaded"==d[0][f];)c=d.shift(),c[o]=!i.parentNode.insertBefore(c,i)}for(var s,a,c,d=[],i=e.scripts[0],o="onreadystatechange",f="readyState";s=r.shift();)a=e.createElement(t),"async"in i?(a.async=!1,e.head.appendChild(a)):i[f]?(d.push(a),a[o]=n):e.write("<"+t+' src="'+s+'" defer></'+t+">"),a.src=s}(document,"script",[
+  "/learning-react-and-redux-documentation/commons-8d5048b07969403445b0.js","/learning-react-and-redux-documentation/app-289c5076e4386285ad66.js","/learning-react-and-redux-documentation/path---tutorial-bonus-react-router-e106072ae71d89d437ee.js","/learning-react-and-redux-documentation/component---src-templates-post-js-3a17a3be098b31ee6856.js","/learning-react-and-redux-documentation/component---src-layouts-index-js-df046e3d82d9aa5cb2d4.js"
+])
+  </script><style id="gatsby-inlined-css">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0;-webkit-text-decoration-skip:ink;text-decoration-skip:ink}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:112.5%/1.45em georgia,serif;box-sizing:border-box;overflow-y:scroll}*,:after,:before{box-sizing:inherit}body{color:rgba(0,0,0,.8);font-family:georgia,serif;font-weight:400;word-wrap:break-word;-webkit-font-kerning:normal;font-kerning:normal;-ms-font-feature-settings:"kern","liga","clig","calt";-webkit-font-feature-settings:"kern","liga","clig","calt";font-feature-settings:"kern","liga","clig","calt","kern"}img{max-width:100%;margin:0 0 1.45rem;padding:10px;//border:1px solid #ddd;box-shadow:0 3px 3px #000;background:#eee;border-radius:5px}h1{font-size:2.25rem}h1,h2{margin:0 0 1.45rem;padding:0;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h2{font-size:1.62671rem}h3{font-size:1.38316rem}h3,h4{margin:0 0 1.45rem;padding:0;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h4{font-size:1rem}h5{font-size:.85028rem}h5,h6{margin:0 0 1.45rem;padding:0;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h6{font-size:.78405rem}hgroup{margin:0 0 1.45rem;padding:0}ol,ul{margin:0 0 1.45rem 1.45rem;padding:0;list-style-position:outside;list-style-image:none}dd,dl,figure,p{margin:0 0 1.45rem;padding:0}pre{padding:0;font-size:.85rem;line-height:1.42;background:rgba(0,0,0,.04);border-radius:3px;overflow:auto;word-wrap:normal;padding:1.45rem}pre,table{margin:0 0 1.45rem}table{padding:0;font-size:1rem;line-height:1.45rem;border-collapse:collapse;width:100%}fieldset{margin:0 0 1.45rem;padding:0}blockquote{padding-left:1rem;padding-right:1rem;margin:0;margin-bottom:1.45rem;border-left:4px solid #ddd}form,iframe,noscript{margin:0 0 1.45rem;padding:0}hr{margin:0 0 calc(1.45rem - 1px);padding:0;background:rgba(0,0,0,.2);border:none;height:1px}address{margin:0 0 1.45rem;padding:0}b,dt,strong,th{font-weight:700}li{margin-bottom:.725rem}ol li,ul li{padding-left:0}li>ol,li>ul{margin-left:1.45rem;margin-bottom:.725rem;margin-top:.725rem}blockquote :last-child,li :last-child,p :last-child{margin-bottom:0}li>p{margin-bottom:.725rem}code,kbd,samp{font-size:.85rem;line-height:1.45rem}abbr,abbr[title],acronym{border-bottom:1px dotted rgba(0,0,0,.5);cursor:help}abbr[title]{text-decoration:none}td,th,thead{text-align:left}td,th{border-bottom:1px solid rgba(0,0,0,.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding:.725rem .96667rem calc(.725rem - 1px)}td:first-child,th:first-child{padding-left:0}td:last-child,th:last-child{padding-right:0}code,tt{background-color:rgba(0,0,0,.04);border-radius:3px;font-family:SFMono-Regular,Consolas,Roboto Mono,Droid Sans Mono,Liberation Mono,Menlo,Courier,monospace;padding:0;padding-top:.2em;padding-bottom:.2em;padding-left:.4rem;margin-right:.2rem}pre code{background:none;line-height:1.42}code:after,code:before,tt:after,tt:before{letter-spacing:-.2em;content:" "}pre code:after,pre code:before,pre tt:after,pre tt:before{content:""}@media only screen and (max-width:480px){html{font-size:100%}}#toc{float:right;max-width:333px;font-size:14px;padding:10px 5px 0;background:#eee;border:1px solid #ddd;border-radius:3px;margin:15px 0 15px 15px;box-shadow:0 0 2px 2px rgba(0,0,0,.05)}#toc ul{margin-bottom:0;list-style-type:square}#toc h5{margin:20px 0 8px}@media only screen and (max-width:1000px){#toc{max-width:200px}}#content-wrapper,#header-wrapper{max-width:1400px}@media only screen and (max-width:1200px){#content-wrapper,#header-wrapper{max-width:1100px}}#header-wrapper-outer{background:#222 url("https://i.imgur.com/KeFRjIL.jpg");margin-bottom:2.5rem}.gatsby-resp-image-wrapper{border-radius:3px;border:1px solid #ddd;box-shadow:0 0 3px rgba(0,0,0,.2);padding:0}.gatsby-resp-image-background-image{border-radius:10px}.gatsby-highlight{margin-bottom:20px}.gatsby-resp-image-image{padding:6px}pre{text-indent:-8px}.next-step-link-wrapper{border-top:1px solid rgba(0,0,0,.2)}.next-step-link-wrapper:after{content:"";display:block;clear:both}.next-step-link{float:right;font-size:20px;margin:20px 0}.current-step{color:#555;background:#f5f5f5;padding:8px;border:1px solid #ddd;box-shadow:0 0 1px 1px rgba(0,0,0,.1);border-radius:3px;display:inline-block;font-size:14px;float:right;margin:14px 0 0}code[class*=language-],pre[class*=language-]{color:#000;background:none;text-shadow:0 1px #fff;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-]::-moz-selection,code[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection{text-shadow:none;background:#b3d4fc}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#a67f59;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style></head><body><div id="___gatsby"><div data-reactroot="" data-reactid="1" data-react-checksum="1008006233"><!-- react-empty: 2 --><div id="header-wrapper-outer" data-reactid="3"><div id="header-wrapper" style="margin:0 auto;padding:1.45rem 1.0875rem;" data-reactid="4"><h1 style="margin:0;" data-reactid="5"><a style="color:white;text-decoration:none;font-size:0.9em;line-height:1.5em;" href="/learning-react-and-redux-documentation/" data-reactid="6">Learning React and Redux</a></h1></div></div><div id="content-wrapper" style="margin:0 auto;padding:0px 1.0875rem 1.45rem;padding-top:0;" data-reactid="7"><div data-reactid="8"><aside id="toc" data-reactid="9"><ul data-reactid="10"><h5 data-reactid="11">Intro</h5><li data-reactid="12"><a href="/learning-react-and-redux-documentation/tutorial/getting-started" data-reactid="13"><!-- react-text: 14 -->Getting Started<!-- /react-text --></a></li><h5 data-reactid="15">Step by Step Guide</h5><li data-reactid="16"><a href="/learning-react-and-redux-documentation/tutorial/steps/1-setup-package/" data-reactid="17"><!-- react-text: 18 -->Step 1: <!-- /react-text --><!-- react-text: 19 -->Generate the package.json<!-- /react-text --></a></li><li data-reactid="20"><a href="/learning-react-and-redux-documentation/tutorial/steps/2-webpack/" data-reactid="21"><!-- react-text: 22 -->Step 2: <!-- /react-text --><!-- react-text: 23 -->Setting up Webpack<!-- /react-text --></a></li><li data-reactid="24"><a href="/learning-react-and-redux-documentation/tutorial/steps/3-babel/" data-reactid="25"><!-- react-text: 26 -->Step 3: <!-- /react-text --><!-- react-text: 27 -->Setting up Babel<!-- /react-text --></a></li><li data-reactid="28"><a href="/learning-react-and-redux-documentation/tutorial/steps/4-eslint-and-prettier/" data-reactid="29"><!-- react-text: 30 -->Step 4: <!-- /react-text --><!-- react-text: 31 -->ESLint and Prettier<!-- /react-text --></a></li><li data-reactid="32"><a href="/learning-react-and-redux-documentation/tutorial/steps/5-starting-react/" data-reactid="33"><!-- react-text: 34 -->Step 5: <!-- /react-text --><!-- react-text: 35 -->Starting with React<!-- /react-text --></a></li><li data-reactid="36"><a href="/learning-react-and-redux-documentation/tutorial/steps/6-adding-the-map/" data-reactid="37"><!-- react-text: 38 -->Step 6: <!-- /react-text --><!-- react-text: 39 -->Adding the Map<!-- /react-text --></a></li><li data-reactid="40"><a href="/learning-react-and-redux-documentation/tutorial/steps/7-styling-with-postcss/" data-reactid="41"><!-- react-text: 42 -->Step 7: <!-- /react-text --><!-- react-text: 43 -->CSS Modules and PostCSS<!-- /react-text --></a></li><li data-reactid="44"><a href="/learning-react-and-redux-documentation/tutorial/steps/8-webpack-dev-server/" data-reactid="45"><!-- react-text: 46 -->Step 8: <!-- /react-text --><!-- react-text: 47 -->Webpack Dev Server<!-- /react-text --></a></li><li data-reactid="48"><a href="/learning-react-and-redux-documentation/tutorial/steps/9-adding-points-to-the-map/" data-reactid="49"><!-- react-text: 50 -->Step 9: <!-- /react-text --><!-- react-text: 51 -->Adding Points to the Map<!-- /react-text --></a></li><li data-reactid="52"><a href="/learning-react-and-redux-documentation/tutorial/steps/10-pointer-details/" data-reactid="53"><!-- react-text: 54 -->Step 10: <!-- /react-text --><!-- react-text: 55 -->Showing the Details of each Point<!-- /react-text --></a></li><li data-reactid="56"><a href="/learning-react-and-redux-documentation/tutorial/steps/11-favourite-places/" data-reactid="57"><!-- react-text: 58 -->Step 11: <!-- /react-text --><!-- react-text: 59 -->Favourite Places<!-- /react-text --></a></li><li data-reactid="60"><a href="/learning-react-and-redux-documentation/tutorial/steps/12-favourites-list/" data-reactid="61"><!-- react-text: 62 -->Step 12: <!-- /react-text --><!-- react-text: 63 -->Favourites List<!-- /react-text --></a></li><li data-reactid="64"><a href="/learning-react-and-redux-documentation/tutorial/steps/13-adding-redux/" data-reactid="65"><!-- react-text: 66 -->Step 13: <!-- /react-text --><!-- react-text: 67 -->Starting with Redux<!-- /react-text --></a></li><li data-reactid="68"><a href="/learning-react-and-redux-documentation/tutorial/steps/14-managing-favourites-with-redux/" data-reactid="69"><!-- react-text: 70 -->Step 14: <!-- /react-text --><!-- react-text: 71 -->Managing Favourites with Redux<!-- /react-text --></a></li><li data-reactid="72"><a href="/learning-react-and-redux-documentation/tutorial/steps/15-removing-favourites-from-the-list/" data-reactid="73"><!-- react-text: 74 -->Step 15: <!-- /react-text --><!-- react-text: 75 -->Removing Favourites from the List<!-- /react-text --></a></li><li data-reactid="76"><a href="/learning-react-and-redux-documentation/tutorial/steps/16-ids-for-points/" data-reactid="77"><!-- react-text: 78 -->Step 16: <!-- /react-text --><!-- react-text: 79 -->Adding IDs to the Points Data<!-- /react-text --></a></li><li data-reactid="80"><a href="/learning-react-and-redux-documentation/tutorial/steps/17-testing-with-jest/" data-reactid="81"><!-- react-text: 82 -->Step 17: <!-- /react-text --><!-- react-text: 83 -->Testing with Jest<!-- /react-text --></a></li><li data-reactid="84"><a href="/learning-react-and-redux-documentation/tutorial/steps/18-testing-redux-actions/" data-reactid="85"><!-- react-text: 86 -->Step 18: <!-- /react-text --><!-- react-text: 87 -->Testing Redux Actions<!-- /react-text --></a></li><li data-reactid="88"><a href="/learning-react-and-redux-documentation/tutorial/steps/19-testing-redux-reducers/" data-reactid="89"><!-- react-text: 90 -->Step 19: <!-- /react-text --><!-- react-text: 91 -->Testing Redux Reducers<!-- /react-text --></a></li><li data-reactid="92"><a href="/learning-react-and-redux-documentation/tutorial/steps/20-jest-component-configuration/" data-reactid="93"><!-- react-text: 94 -->Step 20: <!-- /react-text --><!-- react-text: 95 -->Preparing Component testing with Jest<!-- /react-text --></a></li><li data-reactid="96"><a href="/learning-react-and-redux-documentation/tutorial/steps/21-testing-the-map/" data-reactid="97"><!-- react-text: 98 -->Step 21: <!-- /react-text --><!-- react-text: 99 -->Testing the Map<!-- /react-text --></a></li><li data-reactid="100"><a href="/learning-react-and-redux-documentation/tutorial/steps/22-testing-connected-components/" data-reactid="101"><!-- react-text: 102 -->Step 22: <!-- /react-text --><!-- react-text: 103 -->Testing Connected Components<!-- /react-text --></a></li><li data-reactid="104"><a href="/learning-react-and-redux-documentation/tutorial/steps/23-test-the-app-component/" data-reactid="105"><!-- react-text: 106 -->Step 23: <!-- /react-text --><!-- react-text: 107 -->Testing the App Component<!-- /react-text --></a></li><li data-reactid="108"><a href="/learning-react-and-redux-documentation/tutorial/steps/24-test-favourites-list/" data-reactid="109"><!-- react-text: 110 -->Step 24: <!-- /react-text --><!-- react-text: 111 -->Testing the Favourites List<!-- /react-text --></a></li><li data-reactid="112"><a href="/learning-react-and-redux-documentation/tutorial/steps/25-test-the-pointer/" data-reactid="113"><!-- react-text: 114 -->Step 25: <!-- /react-text --><!-- react-text: 115 -->Testing the Pointer<!-- /react-text --></a></li><h5 data-reactid="116">Bonus Steps</h5><li data-reactid="117"><a href="/learning-react-and-redux-documentation/tutorial/bonus/react-router" data-reactid="118"><!-- react-text: 119 -->Navigation with React Router<!-- /react-text --></a></li><h5 data-reactid="120">Information</h5><li data-reactid="121"><a href="/learning-react-and-redux-documentation/tutorial/links" data-reactid="122"><!-- react-text: 123 -->Links<!-- /react-text --></a></li></ul></aside><h1 data-reactid="124">Navigation with React Router</h1><div data-reactid="125"><blockquote>
+<p><em>Note:</em> The starting point of this example is after Step 25. You can get there
+by running <code>git checkout master</code>. <br><br> The finished version of this bonus
+lesson is in the branch <code>bonus/react-router</code>. To see it run <code>git checkout bonus/react-router</code>.</p>
+</blockquote>
+<p>One feature that almost all applications need is a way to navigate between
+pages, a.k.a routing. As React is not a framework it does not ship with any
+direct way to achieve this. Instead we must use an open-source solution that
+allows us to apply routing in the React component based style.</p>
+<p>The most popular routing solution in the React community is currently named
+<code>react-router</code> <sup id="fnref-1"><a href="#fn-1" class="footnote-ref">1</a></sup>. This library is a core React routing library and offers
+extensions based on how you want to use it, such as:</p>
+<ul>
+<li><code>react-router-dom</code> (For DOM based websites)</li>
+<li><code>react-router-native</code> (For React Native)</li>
+<li><code>react-router-redux</code> (Connect React Router with Redux)</li>
+</ul>
+<p>We will be focussing on <code>react-router-dom</code> as it is the simplest implementation
+that we can use for this example but be aware that <code>react-router-redux</code> is often
+used so that you can control the navigation by pushing Redux actions.</p>
+<h2>Installing up React Router</h2>
+<p>We will first install the <code>react-router-dom</code> package and its dependencies.</p>
+<div class="gatsby-highlight">
+      <pre class="language-bash"><code>yarn add react-router-dom
+</code></pre>
+      </div>
+<h2>Creating the About Page</h2>
+<p>Next we will create a static "about" page with some basic text information so
+that we have something to navigate too, in order to test the routing.</p>
+<p>Let's create a simple <code>&#x3C;About /></code> component in the components directory. As
+usual we will start by creating a directory with an <code>index.js</code> file in it that
+will export our default component.</p>
+<div class="gatsby-highlight">
+      <pre class="language-js"><code><span class="token comment">// app/js/components/About/index.js</span>
+
+<span class="token keyword">export</span> <span class="token punctuation">{</span> <span class="token keyword">default</span> <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./About'</span><span class="token punctuation">;</span>
+</code></pre>
+      </div>
+<p>Next we will create the actual component and implement a stateless functional
+component that returns the content of the about page.</p>
+<p>First we import <code>React</code> as it must be in scope in order to use JSX. We then
+define the <code>About</code> component and return some simple text content, finally
+exporting the <code>About</code> constant as the default export.</p>
+<p>One interesting thing you may notice here is the use of a <code>style</code> property
+instead of using a CSS file for styling. Since we only need some simple paddings
+this highlights that you can simply pass an object of styles to the <code>style</code> prop
+and React will compile this for you. The format is always an object of the style
+properties with the keys in camel case. e.g. <code>paddingLeft</code> as opposed to
+<code>padding-left</code>. React will then compile this to a style attribute as
+<code>style="padding-left: 20px;"</code>.</p>
+<div class="gatsby-highlight">
+      <pre class="language-jsx"><code><span class="token comment">// app/js/components/About/About.jsx</span>
+
+<span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">About</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>section</span> <span class="token attr-name">style</span><span class="token script language-javascript"><span class="token punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> paddingLeft<span class="token punctuation">:</span> <span class="token number">20</span><span class="token punctuation">,</span> paddingRight<span class="token punctuation">:</span> <span class="token number">20</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">></span></span>About<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">></span></span>
+
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>
+        Lorem ipsum dolor sit amet<span class="token punctuation">,</span> consectetur adipiscing elit<span class="token punctuation">.</span> Donec volutpat
+        tincidunt felis<span class="token punctuation">,</span> at auctor augue pharetra non<span class="token punctuation">.</span> Nam lacinia leo eu
+        tincidunt porttitor<span class="token punctuation">.</span> Quisque congue facilisis bibendum<span class="token punctuation">.</span> Phasellus
+        vehicula ante a congue tempor<span class="token punctuation">.</span> Aliquam sed imperdiet enim<span class="token punctuation">.</span> Maecenas et
+        diam quis turpis volutpat lacinia et <span class="token keyword">in</span> odio<span class="token punctuation">.</span> Nunc auctor euismod quam
+        ac imperdiet<span class="token punctuation">.</span> Nam sodales<span class="token punctuation">,</span> ante ac accumsan commodo<span class="token punctuation">,</span> ante leo
+        sollicitudin augue<span class="token punctuation">,</span> ut maximus elit sapien ut lectus<span class="token punctuation">.</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>
+        Integer varius<span class="token punctuation">,</span> odio vitae cursus gravida<span class="token punctuation">,</span> felis sem molestie risus<span class="token punctuation">,</span> <span class="token keyword">in</span>
+        ornare nisl nisi a ante<span class="token punctuation">.</span> Sed consectetur molestie ante vitae viverra<span class="token punctuation">.</span>
+        Phasellus vel porta ipsum<span class="token punctuation">.</span> Proin rutrum blandit ipsum<span class="token punctuation">,</span> eu sodales mi
+        consectetur vitae<span class="token punctuation">.</span> Quisque fringilla fermentum iaculis<span class="token punctuation">.</span> Nullam
+        ullamcorper nec sapien sit amet tincidunt<span class="token punctuation">.</span> Sed dictum erat nec erat
+        sodales gravida<span class="token punctuation">.</span> Vestibulum tempor imperdiet convallis<span class="token punctuation">.</span> Duis ligula
+        neque<span class="token punctuation">,</span> finibus id luctus quis<span class="token punctuation">,</span> dignissim et diam<span class="token punctuation">.</span> Donec elit mi<span class="token punctuation">,</span> feugiat
+        mattis justo id<span class="token punctuation">,</span> imperdiet semper lectus<span class="token punctuation">.</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>section</span><span class="token punctuation">></span></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> About<span class="token punctuation">;</span>
+</code></pre>
+      </div>
+<h2>Setting up the Layout</h2>
+<p>We are now ready to start implementing the router. The first thing we will need
+is a layout file. A layout is used to define common elements that will be seen
+on all pages, such as a navigation bar. In this file we will also define our
+different routes and pages.</p>
+<p>Let's start by creating a <code>&#x3C;Layout /></code> component in the usual way. Create an
+index file at <code>app/js/components/Layout/index.js</code> and perform an export from the
+<code>Layout</code> file.</p>
+<div class="gatsby-highlight">
+      <pre class="language-js"><code><span class="token comment">// app/js/components/Layout/index.js</span>
+
+<span class="token keyword">export</span> <span class="token punctuation">{</span> <span class="token keyword">default</span> <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./Layout'</span><span class="token punctuation">;</span>
+</code></pre>
+      </div>
+<p>Next create the actual <code>Layout.js</code> file and start off by exporting a simple
+stateless functional component.</p>
+<div class="gatsby-highlight">
+      <pre class="language-jsx"><code><span class="token comment">// app/js/components/Layout/Layout.jsx</span>
+
+<span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">Layout</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token punctuation">/></span></span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> Layout<span class="token punctuation">;</span>
+</code></pre>
+      </div>
+<h4>Router Types</h4>
+<p>We are now ready to apply the React Router. The first thing to do is to choose
+which router type we plan to use. The three main options are:</p>
+<ul>
+<li><code>BrowserRouter</code> - Uses push state, e.g. <code>/myroute</code></li>
+<li><code>HashRouter</code> - Uses "hash" based history, e.g. <code>/#/myroute</code></li>
+<li><code>MemoryRouter</code> - Navigation in memory, no browser navigation possible</li>
+</ul>
+<p>I would recommend trying all three of these options and seeing the difference in
+action. However, for this example we will start by using the <code>HashRouter</code>.</p>
+<p>The reason we do not use <code>BrowserRouter</code> is that if we are on the <code>/about</code> route
+and the page is reloaded we get a <code>404 Not Found</code> error due to the fact we only
+have an <code>index.html</code> file in our public directory and the browser is instead
+looking for a file called "about".</p>
+<p>The <code>HashRouter</code> solves this by always serving from the index file but keeping
+the routes stored in the URL hash.</p>
+<p>We will implement our <code>HashRouter</code> by importing the component from
+<code>react-router-dom</code> and inserting into our <code>Layout</code> component.</p>
+<div class="gatsby-highlight">
+      <pre class="language-diff"><code>// app/js/components/Layout/Layout.jsx
+
+  import React from 'react';
+<span class="token inserted">+ import { HashRouter } from 'react-router-dom';</span>
+
+  const Layout = () => {
+<span class="token deleted">-   return &lt;div />;</span>
+<span class="token inserted">+   &lt;HashRouter></span>
+<span class="token inserted">+     &lt;div /></span>
+<span class="token inserted">+   &lt;/HashRouter></span>
+  };
+
+  export default Layout;
+</code></pre>
+      </div>
+<p>We now need to use <code>Route</code> components from <code>react-router-dom</code> to define the
+configuration of our routes. Each route component has props for the component
+that it should show and the URL path that should be matched in order for that
+route to be shown. If the path matches the current browser URL, the associated
+component will be displayed wherever the <code>&#x3C;Route /></code> component is placed.</p>
+<p>We will create a configuration option of routes that we will then map into our
+view.</p>
+<div class="gatsby-highlight">
+      <pre class="language-diff"><code>// app/js/components/Layout/Layout.jsx
+
+  import React from 'react';
+<span class="token deleted">- import { HashRouter } from 'react-router-dom';</span>
+<span class="token inserted">+ import { HashRouter, Route } from 'react-router-dom';</span>
+
+<span class="token inserted">+ import App from '../App';</span>
+<span class="token inserted">+ import About from '../About';</span>
+
+<span class="token inserted">+ const routes = [</span>
+<span class="token inserted">+   { path: '/', component: App, exact: true },</span>
+<span class="token inserted">+   { path: '/about', component: About }</span>
+<span class="token inserted">+ ];</span>
+
+  const Layout = () => {
+    &lt;HashRouter>
+<span class="token deleted">-     &lt;div /></span>
+<span class="token inserted">+     &lt;div></span>
+<span class="token inserted">+       &lt;section></span>
+<span class="token inserted">+         {routes.map(route => &lt;Route {...route} key={route.path} />)}</span>
+<span class="token inserted">+       &lt;/section></span>
+<span class="token inserted">+     &lt;/div></span>
+    &lt;/HashRouter>
+  };
+
+  export default Layout;
+</code></pre>
+      </div>
+<p>As you can see, we have imported the <code>App</code> component which is the main view of
+our application (containing the map and favourites list). We also import the
+newly created <code>About</code> component.</p>
+<p>We define that the <code>App</code> component will be shown on the <code>/</code> route and that
+<code>About</code> should be shown when the browser points to <code>/about</code>.</p>
+<p>The reason we need to specify the <code>exact</code> prop from the <code>App</code> route is that
+<code>/about</code> also matches <code>/</code> since they both start with a slash. This tells the
+router to only show the <code>App</code> component if the URL matches the path exactly,
+otherwise both the <code>App</code> and <code>About</code> components would be rendered when visiting
+<code>/about</code>.</p>
+<h4>Navigation Links</h4>
+<p>We can now already move between these components by changing the URL. If you
+navigate in your browser to <code>/#/about</code> you should already see the About page
+text content.</p>
+<p>It would be a lot easier to navigate back and forward if we have navigation
+links though. React Router also provides us with this functionality via a
+component called <code>NavLink</code>.</p>
+<p>We can use this built in component which will create <code>&#x3C;a></code> anchor tags for us
+but will also offer functionality such as highlighting the active page and will
+also build the link to respect our router type.</p>
+<p>We will add our navigation by first importing <code>NavLink</code> from <code>react-router-dom</code>
+and then adding the links into a <code>&#x3C;header></code> tag inside of our Layout, above the
+<code>&#x3C;Route></code> components.</p>
+<div class="gatsby-highlight">
+      <pre class="language-diff"><code>// app/js/components/Layout/Layout.jsx
+
+  import React from 'react';
+<span class="token deleted">- import { HashRouter, Route } from 'react-router-dom';</span>
+<span class="token inserted">+ import { HashRouter, Route, NavLink } from 'react-router-dom';</span>
+
+  import App from '../App';
+  import About from '../About';
+
+  const routes = [
+    { path: '/', component: App, exact: true },
+    { path: '/about', component: About }
+  ];
+
+  const Layout = () => {
+    &lt;HashRouter>
+      &lt;div>
+<span class="token inserted">+       &lt;header></span>
+<span class="token inserted">+         &lt;h2>A Map of Thrones&lt;/h2></span>
+<span class="token inserted">+         &lt;nav></span>
+<span class="token inserted">+           &lt;NavLink to="/" exact></span>
+<span class="token inserted">+             Home</span>
+<span class="token inserted">+           &lt;/NavLink></span>
+<span class="token inserted">+           &lt;NavLink to="/about">About&lt;/NavLink></span>
+<span class="token inserted">+         &lt;/nav></span>
+<span class="token inserted">+       &lt;/header></span>
+<span class="token inserted">+</span>
+        &lt;section>
+          {routes.map(route => &lt;Route {...route} key={route.path} />)}
+        &lt;/section>
+      &lt;/div>
+    &lt;/HashRouter>
+  };
+
+  export default Layout;
+</code></pre>
+      </div>
+<p>Try clicking on these links and you will be able to move between our defined
+routes.</p>
+<blockquote>
+<p><em>Note:</em> We must sepcify the <code>exact</code> prop on the "Home" link for the same
+reason as we do on the route config. Without this when on the "About" page,
+both "About" and "Home" would be marked as active.</p>
+</blockquote>
+<h4>Styling the Layout</h4>
+<p>Finally we will add some CSS styles that will be used style our navigation bar,
+which we will be adding momentarily. Create a <code>Layout.css</code> file in our component
+and add the following styles:</p>
+<div class="gatsby-highlight">
+      <pre class="language-css"><code><span class="token comment">/* app/js/components/Layout/Layout.css */</span>
+
+<span class="token selector">:root</span> <span class="token punctuation">{</span>
+  <span class="token property">--mastheadBackground</span><span class="token punctuation">:</span> #333<span class="token punctuation">;</span>
+  <span class="token property">--space</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.masthead</span> <span class="token punctuation">{</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--space<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">margin</span><span class="token punctuation">:</span> 0 0 <span class="token function">var</span><span class="token punctuation">(</span>--space<span class="token punctuation">)</span> 0<span class="token punctuation">;</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--mastheadBackground<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">box-shadow</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>255, 255, 255, 0.7<span class="token punctuation">)</span> 0 0 3px<span class="token punctuation">;</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
+  <span class="token property">justify-content</span><span class="token punctuation">:</span> space-between<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.title</span> <span class="token punctuation">{</span>
+  <span class="token property">margin</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.navigation</span> <span class="token punctuation">{</span>
+  <span class="token property">padding-top</span><span class="token punctuation">:</span> 8px<span class="token selector">;
+
+  a</span> <span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--text<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">margin-left</span><span class="token punctuation">:</span> 12px<span class="token punctuation">;</span>
+    <span class="token property">text-decoration</span><span class="token punctuation">:</span> none<span class="token selector">;
+
+    &amp;:hover,
+    &amp;[aria-current='true']</span> <span class="token punctuation">{</span>
+      <span class="token property">text-decoration</span><span class="token punctuation">:</span> underline<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+      </div>
+<p>Finally import and apply these styles to our Layout component.</p>
+<div class="gatsby-highlight">
+      <pre class="language-diff"><code>// app/js/components/Layout/Layout.jsx
+
+  ...
+
+<span class="token inserted">+ import styles from './Layout.css';</span>
+
+  const routes = [
+    { path: '/', component: App },
+    { path: '/about', component: About }
+  ];
+
+  const Layout = () => {
+    &lt;HashRouter>
+      &lt;div>
+<span class="token deleted">-       &lt;header></span>
+<span class="token inserted">+       &lt;header className={styles.masthead}></span>
+<span class="token deleted">-         &lt;h2>A Map of Thrones&lt;/h2></span>
+<span class="token inserted">+         &lt;h2 className={styles.title}>A Map of Thrones&lt;/h2></span>
+<span class="token deleted">-         &lt;nav></span>
+<span class="token inserted">+         &lt;nav className={styles.navigation}></span>
+            &lt;NavLink to="/" exact>
+              Home
+            &lt;/NavLink>
+            &lt;NavLink to="/about">About&lt;/NavLink>
+          &lt;/nav>
+        &lt;/header>
+
+        &lt;section>
+          {routes.map(route => &lt;Route {...route} key={route.path} />)}
+        &lt;/section>
+      &lt;/div>
+    &lt;/HashRouter>
+  };
+</code></pre>
+      </div>
+<h2>Rendering the Layout</h2>
+<p>In order to see our new layout we have to render this in our application instead
+of just the <code>App</code> component that is currently rendered from the <code>application.js</code>
+file.</p>
+<p>Replace the import of <code>App</code> with <code>Layout</code> and render this instead to see our new
+application with navigation.</p>
+<div class="gatsby-highlight">
+      <pre class="language-diff"><code>// app/js/application.js
+
+  import React from 'react';
+  import { render } from 'react-dom';
+  import { createStore } from 'redux';
+  import { Provider } from 'react-redux';
+
+<span class="token deleted">- import App from './components/App';</span>
+<span class="token inserted">+ import Layout from './components/Layout';</span>
+  import reducers from './reducers';
+
+  const store = createStore(
+    reducers,
+    window.__REDUX_DEVTOOLS_EXTENSION__ &amp;&amp; window.__REDUX_DEVTOOLS_EXTENSION__()
+  );
+
+  render(
+    &lt;Provider store={store}>
+<span class="token deleted">-     &lt;App /></span>
+<span class="token inserted">+     &lt;Layout /></span>
+    &lt;/Provider>,
+    document.getElementById('app')
+  );
+</code></pre>
+      </div>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/learning-react-and-redux-documentation/static/app-with-nav-ae4ae1a2d0c933fcf19370aaccb1c4aa-a1fdd.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block; ; max-width: 999px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 66.11271676300578%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsSAAALEgHS3X78AAACFElEQVQ4y52STVNSURzG/Q6ZgAhcFCNpaphBIUFFu0LJLQwXNYGJ8qY2ppGaCgZXjMgBWuVMU/ayaKaXRWObrI/Q+KF+nUubJhfeafEszsz5/87zPOffJssyExMTKIqCz+fD4/H8l4LBIMPDw7QZOi38rQ6hwaEgr14fcPDmLfVGU6jRUjQWQ+rppdMqte6dNXXx7/wJoKZReZyjo+8cH//i0+eP7O+/4PDwKz9/fBPgPey9TgLCTYceYLuhE4PZik04WX6wwsDgEJlclvfvXvLlwz6l7TweUU04fEWfQw2oxTF22TjvcuFwOrmXu0NpI0V9Z55GZYGpm2HRl1efwzMC2G4043Zf5IYyRjYZpbh2l+rjDGphjmZlnifFNFElqN+hyWJDiYzytLyAupUWgFlqaobntSXqu4tEr49httr1AY2iv6lYiKqaQy2m2FpNUFydZqeQEsD77BbnuBryi55Fmg7j6UDt1QGvm7JwtSfiNdQs9XKGWilNTZwL6wnksct0Sd2tak4Fah9ilnoYDwXJL8XZzE9TLaUoFWaJxcJEozKSw/lnD/UAtSj+QQ/q5lyr/GfqAtVylsnJEK5LbkZG/Hj63dgEVKtHV2STRWrtocXeS/xWhGY1x+52mkcrCcobSZJxhYB/AJNYLV2R7Y5zRK4F6LvQR7/Py8ribSqFNOvLcbYezrC9NkNMRDfbuk8AfwMlw7QPVwJ5QAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="Img: How the app looks with the layout and navigation"
+        title=""
+        src="/learning-react-and-redux-documentation/static/app-with-nav-ae4ae1a2d0c933fcf19370aaccb1c4aa-4206a.png"
+        srcset="/learning-react-and-redux-documentation/static/app-with-nav-ae4ae1a2d0c933fcf19370aaccb1c4aa-46df6.png 250w,
+/learning-react-and-redux-documentation/static/app-with-nav-ae4ae1a2d0c933fcf19370aaccb1c4aa-e3f4d.png 500w,
+/learning-react-and-redux-documentation/static/app-with-nav-ae4ae1a2d0c933fcf19370aaccb1c4aa-4206a.png 999w,
+/learning-react-and-redux-documentation/static/app-with-nav-ae4ae1a2d0c933fcf19370aaccb1c4aa-a1fdd.png 1384w"
+        sizes="(max-width: 999px) 100vw, 999px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<h2>Adding an Existing Component as a Page</h2>
+<p>Now that we have our routing setup, it is trivial to add new pages. For example
+it may make sense to have the Favourites List feature on it's own page instead
+of hidden below the map.</p>
+<p>We can add this new page in 2 steps. First we import the
+<code>ConnectedFavouritesList</code> and add an entry to our routing configuration.</p>
+<div class="gatsby-highlight">
+      <pre class="language-diff"><code>// app/js/components/Layout/Layout.jsx
+
+  ...
+
+  import App from '../App';
+  import About from '../About';
+<span class="token inserted">+ import ConnectedFavouritesList from '../FavouritesList';</span>
+
+  import styles from './Layout.css';
+
+  const routes = [
+    { path: '/', component: App },
+    { path: '/about', component: About },
+<span class="token inserted">+   { path: '/favs', component: ConnectedFavouritesList }</span>
+  ];
+</code></pre>
+      </div>
+<p>Finally we will add a <code>NavLink</code> for the new page to our header.</p>
+<div class="gatsby-highlight">
+      <pre class="language-diff"><code>// app/js/components/Layout/Layout.jsx
+
+  ...
+
+  &lt;nav className={styles.navigation}>
+    &lt;NavLink to="/" exact>
+      Home
+    &lt;/NavLink>
+    &lt;NavLink to="/about">About&lt;/NavLink>
+<span class="token inserted">+   &lt;NavLink to="/favs">Favourites&lt;/NavLink></span>
+  &lt;/nav>
+</code></pre>
+      </div>
+<p>You will not see a "Favourites" link in the navigation which when clicked on
+will show the favourites list.</p>
+<p>The delete actions even work as the component was already connected to Redux.</p>
+<h2>Dynamically Building the Navigation Links</h2>
+<p>Although it was easy to add a new page, it still took 2 steps. You may also
+notice that most of the information is the same between the <code>Route</code> and
+<code>NavLink</code> props, so it would make more sense to share these.</p>
+<p>Let's also dynamically build the navigation as we do with the routes. We will
+first have to add the <code>title</code> of each link to the route configuration.</p>
+<div class="gatsby-highlight">
+      <pre class="language-diff"><code>const routes = [
+<span class="token deleted">-  { path: '/', component: App, exact: true },</span>
+<span class="token deleted">-  { path: '/about', component: About },</span>
+<span class="token deleted">-  { path: '/favs', component: ConnectedFavouritesList }</span>
+<span class="token inserted">+  { path: '/', component: App, title: 'Home', exact: true },</span>
+<span class="token inserted">+  { path: '/about', component: About, title: 'About' },</span>
+<span class="token inserted">+  { path: '/favs', component: ConnectedFavouritesList, title: 'Favourites' }</span>
+];
+</code></pre>
+      </div>
+<p>Finally, map over the config within the <code>&#x3C;header></code> to create the links.</p>
+<div class="gatsby-highlight">
+      <pre class="language-diff"><code>  &lt;nav className={styles.navigation}>
+<span class="token deleted">-   &lt;NavLink to="/" exact></span>
+<span class="token deleted">-     Home</span>
+<span class="token deleted">-   &lt;/NavLink></span>
+<span class="token deleted">-   &lt;NavLink to="/about">About&lt;/NavLink></span>
+<span class="token deleted">-   &lt;NavLink to="/favs">Favourites&lt;/NavLink></span>
+<span class="token inserted">+   {routes.map(route => (</span>
+<span class="token inserted">+     &lt;NavLink to={route.path} exact={route.exact} key={route.path}></span>
+<span class="token inserted">+       {route.title}</span>
+<span class="token inserted">+     &lt;/NavLink></span>
+<span class="token inserted">+   ))}</span>
+  &lt;/nav>
+</code></pre>
+      </div>
+<h2>Working with Parameters</h2>
+<p>The final thing that I would like to show is how to pass parameters in the URL.
+This will be demonstrated by adding a link to each point on the map which when
+clicked on will show the details of that point on it's own page.</p>
+<h4>Linking to the Point</h4>
+<p>The first thing we will do is add the <code>&#x3C;NavLink /></code> link to the <code>&#x3C;Pointer /></code>
+component around the title.</p>
+<p>First import <code>NavLink</code>:</p>
+<div class="gatsby-highlight">
+      <pre class="language-diff"><code>// app/js/components/Pointer/Pointer.jsx
+
+  import React, { Component } from 'react';
+  import PropTypes from 'prop-types';
+  import classNames from 'classnames';
+  import { connect } from 'react-redux';
+<span class="token inserted">+ import { NavLink } from 'react-router-dom';</span>
+
+  import { addFavourite, removeFavourite } from '../../actions';
+  import styles from './Pointer.css';
+
+  ...
+</code></pre>
+      </div>
+<p>Then update the <code>render</code> method to apply this link in the <code>&#x3C;h3></code> tag. We must
+also destructure the <code>id</code> prop so that it can be used in the link target.</p>
+<div class="gatsby-highlight">
+      <pre class="language-diff"><code>// app/js/components/Pointer/Pointer.jsx
+
+  render () {
+<span class="token deleted">-   const { x, y, details, favourite } = this.props;</span>
+<span class="token inserted">+   const { x, y, details, favourite, id } = this.props;</span>
+    const { name, house, words } = details;
+
+    const pointerClasses = classNames(styles.pointer, {
+      [styles.favourite]: favourite
+    });
+
+    const detailsClasses = classNames(styles.details, {
+      [styles.hidden]: !this.state.open
+    });
+
+    return (
+      &lt;div
+        className={pointerClasses}
+        style={{ left: x, top: y }}
+        onClick={this.toggle}
+      >
+        &lt;div className={detailsClasses}>
+          &lt;header className={styles.headline}>
+<span class="token deleted">-           &lt;h3>{name}&lt;/h3></span>
+<span class="token inserted">+           &lt;h3></span>
+<span class="token inserted">+             &lt;NavLink to={`/points/${id}`}>{name}&lt;/NavLink></span>
+<span class="token inserted">+           &lt;/h3></span>
+            &lt;div className={styles.detailsControls}>
+              &lt;a
+                href="#favourite"
+                className={styles.control}
+                onClick={this.favourite}
+              >
+                {favourite ? '–' : '+'}
+              &lt;/a>
+
+              &lt;a
+                href="#toggle"
+                className={styles.control}
+                onClick={this.toggle}
+              >
+                &amp;times;
+              &lt;/a>
+            &lt;/div>
+          &lt;/header>
+
+          &lt;p>House: {house}&lt;/p>
+          &lt;p>Words: {words}&lt;/p>
+        &lt;/div>
+      &lt;/div>
+    );
+  }
+</code></pre>
+      </div>
+<p>You can also add styles to make the link look a little nicer.</p>
+<div class="gatsby-highlight">
+      <pre class="language-diff"><code>/* app/js/components/Pointer/Pointer.css */
+
+  h3 {
+    margin: 5px 0;
+<span class="token inserted">+</span>
+<span class="token inserted">+   a {</span>
+<span class="token inserted">+     color: #fff;</span>
+<span class="token inserted">+     text-decoration: none;</span>
+<span class="token inserted">+     transition: 0.3s color;</span>
+<span class="token inserted">+</span>
+<span class="token inserted">+     &amp;:hover {</span>
+<span class="token inserted">+       color: #999;</span>
+<span class="token inserted">+     }</span>
+<span class="token inserted">+   }</span>
+  }
+</code></pre>
+      </div>
+<h4>Creating the Detail View</h4>
+<p>Begin by creating a <code>DetailsView</code> component in the same way as we created
+<code>About</code>, earlier. Start with an <code>index.js</code> file then create a simple functional
+component inside of <code>DetailsView.jsx</code>.</p>
+<div class="gatsby-highlight">
+      <pre class="language-js"><code><span class="token comment">// app/js/components/DetailsView/index.js</span>
+
+<span class="token keyword">export</span> <span class="token punctuation">{</span> <span class="token keyword">default</span> <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./DetailsView'</span><span class="token punctuation">;</span>
+</code></pre>
+      </div>
+<div class="gatsby-highlight">
+      <pre class="language-jsx"><code><span class="token comment">// app/js/components/DetailsView/DetailsView.jsx</span>
+
+<span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">DetailsView</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token punctuation">/></span></span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> DetailsView<span class="token punctuation">;</span>
+</code></pre>
+      </div>
+<p>Since the detail view will need access to the points data we will now connect
+the <code>DetailsView</code> to Redux. Once connected we will use a <code>mapStateToProps</code>
+function to pass the <code>points</code> as a prop to the component.</p>
+<div class="gatsby-highlight">
+      <pre class="language-diff"><code>// app/js/components/DetailsView/DetailsView.jsx
+
+  import React from 'React';
+<span class="token inserted">+ import PropTypes from 'prop-types';</span>
+<span class="token inserted">+ import { connect } from 'react-redux';</span>
+
+<span class="token deleted">- const DetailsView = () => {</span>
+<span class="token deleted">-   return &lt;div />;</span>
+<span class="token deleted">- };</span>
+<span class="token inserted">+ const DetailsView = ({ points }) => {</span>
+<span class="token inserted">+   return &lt;div />;</span>
+<span class="token inserted">+ };</span>
+<span class="token inserted">+</span>
+<span class="token inserted">+ DetailsView.propTypes = {</span>
+<span class="token inserted">+   points: PropTypes.array.isRequired</span>
+<span class="token inserted">+ };</span>
+<span class="token inserted">+</span>
+<span class="token inserted">+ const mapStateToProps = state => {</span>
+<span class="token inserted">+   return {</span>
+<span class="token inserted">+     points: state.points</span>
+<span class="token inserted">+   };</span>
+<span class="token inserted">+ };</span>
+<span class="token inserted">+</span>
+<span class="token inserted">+ const ConnectedDetailsView = connect(mapStateToProps)(DetailsView);</span>
+<span class="token inserted">+</span>
+<span class="token deleted">- export default DetailsView;</span>
+<span class="token inserted">+ export default ConnectedDetailsView;</span>
+</code></pre>
+      </div>
+<h4>Applying the new Route</h4>
+<p>Now that we have a component we must add it to our <code>routes</code> config in the
+layout. Since we do not want this route to appear on the navigation bar we will
+not give it a title. We then have to ensure that any routes without a <code>title</code>
+attribute are filtered out when creating the navigation links.</p>
+<p>We specify the optional paramter in our route by using the <code>:param</code> syntax in
+the path. In this case we specify the parameter <code>:pointId</code> that will be matches
+from any URL that starts with <code>/points/</code>. e.g. <code>/points/point-winterfell</code>.</p>
+<div class="gatsby-highlight">
+      <pre class="language-diff"><code>// app/js/components/Layout/Layout.jsx
+
+  ...
+
+  import App from '../App';
+  import About from '../About';
+  import ConnectedFavouritesList from '../FavouritesList';
+<span class="token inserted">+ import ConnectedDetailsView from '../DetailsView';</span>
+
+  const routes = [
+    { path: '/', component: App, title: 'Home', exact: true },
+    { path: '/about', component: About, title: 'About' },
+<span class="token deleted">-   { path: '/favs', component: ConnectedFavouritesList, title: 'Favourites' }</span>
+<span class="token inserted">+   { path: '/favs', component: ConnectedFavouritesList, title: 'Favourites' },</span>
+<span class="token inserted">+   { path: '/points/:pointId', component: ConnectedDetailsView }</span>
+  ];
+
+  ...
+
+  &lt;nav className={styles.navigation}>
+<span class="token deleted">-   {routes.map(route => (</span>
+<span class="token inserted">+   {routes.filter(route => route.title).map(route => (</span>
+      &lt;NavLink to={route.path} exact={route.exact} key={route.path}>
+        {route.title}
+      &lt;/NavLink>
+    ))}
+  &lt;/nav>
+</code></pre>
+      </div>
+<h4>Accessing the Params</h4>
+<p>A component that is rendered via a React Router <code>Route</code> component will
+automatically recieve a prop called <code>match</code>. The <code>match</code> prop contains
+information about the current route such as the path, url, and params.</p>
+<p>If we log the <code>match</code> prop it looks like this:</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/learning-react-and-redux-documentation/static/match-props-2865a5ca5afb754c3e5ecc7f1e4bcddb-2e06b.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block; ; max-width: 955px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 18.42931937172775%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAAAsSAAALEgHS3X78AAAAfklEQVQY06WO2QqDMBBF/f9/FFoorViXbBNjEnM69qXvduDCcLlbtwwrfpiQ90JeV1KM5BDIxvzgPVECzkdCSIj+Eje2VGitcRyHcoJRbWdfjjAJfhxJy0xRc6uVq9e5UdseT1zfI/cbeZ6pef82XwrMOrvsBWssVZedQf/gA1I7ObnqxgJJAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="Img: match props passed to router components"
+        title=""
+        src="/learning-react-and-redux-documentation/static/match-props-2865a5ca5afb754c3e5ecc7f1e4bcddb-2e06b.png"
+        srcset="/learning-react-and-redux-documentation/static/match-props-2865a5ca5afb754c3e5ecc7f1e4bcddb-4c736.png 250w,
+/learning-react-and-redux-documentation/static/match-props-2865a5ca5afb754c3e5ecc7f1e4bcddb-4e880.png 500w,
+/learning-react-and-redux-documentation/static/match-props-2865a5ca5afb754c3e5ecc7f1e4bcddb-2e06b.png 955w"
+        sizes="(max-width: 955px) 100vw, 955px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p>From this information you can see that we will be able to access the <code>pointId</code>
+parameter via <code>this.props.match.params.pointId</code> (<code>point-winterfell</code>) which gives
+us the ID of the point that was clicked on because it is in the current URL
+<code>/#/points/point-winterfell</code>.</p>
+<p>So we can now combine this information with the points from Redux in order to
+find which one we should show.</p>
+<div class="gatsby-highlight">
+      <pre class="language-diff"><code>// app/js/components/DetailsView/DetailsView.jsx
+
+  import React from 'React';
+  import PropTypes from 'prop-types';
+  import { connect } from 'react-redux';
+  import { NavLink } from 'react-router-dom';
+
+<span class="token deleted">- const DetailsView = ({ points }) => {</span>
+<span class="token inserted">+ const DetailsView = ({ points, match }) => {</span>
+<span class="token inserted">+   const point = points.filter(point => point.id === match.params.pointId)[0];</span>
+<span class="token inserted">+</span>
+<span class="token inserted">+   console.log(match);</span>
+<span class="token inserted">+   console.log(point);</span>
+<span class="token inserted">+</span>
+    return &lt;div />;
+  };
+
+  DetailsView.propTypes = {
+<span class="token deleted">-   points: PropTypes.array.isRequired</span>
+<span class="token inserted">+   points: PropTypes.array.isRequired,</span>
+<span class="token inserted">+   match: PropTypes.object.isRequired</span>
+  };
+
+  const mapStateToProps = state => {
+    return {
+      points: state.points
+    };
+  };
+
+  const ConnectedDetailsView = connect(mapStateToProps)(DetailsView);
+
+  export default ConnectedDetailsView;
+</code></pre>
+      </div>
+<p>We use the <code>pointId</code> param from the URL and filter the Redux <code>points</code> for the
+correct entry. If we log this information we will see that we have all of the
+data for this point:</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/learning-react-and-redux-documentation/static/log-point-7b1ed3f93398190407425fbeed1f3291-58420.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block; ; max-width: 952px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 16.70168067226891%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAAAsSAAALEgHS3X78AAAAY0lEQVQI16XNwQ7CIBAAUf7/K71YBWQrC10qKKNX05Nxknce11ojLwm9erbLgoXAPRXkpmTvERE0Rqok1nPg0Z/MOb+UUlBVaq04PsXTyuYTTTKv3vknN8ZAZafZjpkd7r96A5Hs6unnAaK8AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="Img: log the point information matching the URL parameters"
+        title=""
+        src="/learning-react-and-redux-documentation/static/log-point-7b1ed3f93398190407425fbeed1f3291-58420.png"
+        srcset="/learning-react-and-redux-documentation/static/log-point-7b1ed3f93398190407425fbeed1f3291-eff2b.png 250w,
+/learning-react-and-redux-documentation/static/log-point-7b1ed3f93398190407425fbeed1f3291-ac2d1.png 500w,
+/learning-react-and-redux-documentation/static/log-point-7b1ed3f93398190407425fbeed1f3291-58420.png 952w"
+        sizes="(max-width: 952px) 100vw, 952px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<blockquote>
+<p><em>Note:</em> There is no error handling here, if the point ID in the URL is not
+found, an error will occur. In a production application you must make sure to
+handle this.</p>
+</blockquote>
+<p>So finally, now that we have the information about the point, we will show this
+information on the page. We will destructure the point details and render it in
+the component.</p>
+<div class="gatsby-highlight">
+      <pre class="language-diff"><code>// app/js/components/DetailsView/DetailsView.jsx
+
+  ...
+
+<span class="token inserted">+ import { NavLink } from 'react-router-dom';</span>
+
+  ...
+
+  const DetailsView = ({ points, match }) => {
+    const point = points.filter(point => point.id === match.params.pointId)[0];
+<span class="token inserted">+   const { name, house, words } = point.details;</span>
+
+<span class="token deleted">-   console.log(match);</span>
+<span class="token deleted">-   console.log(point);</span>
+<span class="token inserted">+</span>
+<span class="token inserted">+   return (</span>
+<span class="token inserted">+     &lt;section style={{ paddingLeft: 20, paddingRight: 20 }}></span>
+<span class="token inserted">+       &lt;header></span>
+<span class="token inserted">+         &lt;h2>{name}&lt;/h2></span>
+<span class="token inserted">+       &lt;/header></span>
+<span class="token inserted">+</span>
+<span class="token inserted">+       &lt;p>House: {house}&lt;/p></span>
+<span class="token inserted">+       &lt;p>Words: {words}&lt;/p></span>
+<span class="token inserted">+</span>
+<span class="token inserted">+       &lt;p></span>
+<span class="token inserted">+         &lt;NavLink to="/">Back&lt;/NavLink></span>
+<span class="token inserted">+       &lt;/p></span>
+<span class="token inserted">+     &lt;/section></span>
+<span class="token inserted">+   );</span>
+  };
+</code></pre>
+      </div>
+<p>Try clicking on the title of a popup on the map and you will see the details
+from this view.</p>
+<h2>Next Steps</h2>
+<p>At this stage you should be starting to feel comfortable with React. There are a
+few "nice-to-have" features that could be added to this bonus example. If you
+feel like going further, you may want to:</p>
+<ul>
+<li>Link the <code>FavouritesList</code> entries to the <code>DetailsView</code> route.</li>
+<li>Add/Remove favourites from the <code>DetailsView</code> using Redux actions.</li>
+<li>Write tests for the <code>About</code> component.</li>
+<li>Write tests for the <code>DetailsView</code> component.</li>
+<li>Write tests for the <code>Layout</code> component.</li>
+</ul>
+<p>You can use the existing components and tests as examples to get your started.</p>
+<hr>
+<ul>
+<li><sup id="fn-1">[1]</sup>: <a href="https://github.com/ReactTraining/react-router">https://github.com/ReactTraining/react-router</a></li>
+</ul></div></div></div></div></div></body></html>
