@@ -639,6 +639,9 @@ pre tt:after {
   margin-bottom: 0;
   list-style-type: square;
 }
+#toc h5 {
+  margin: 20px 0 8px 0;
+}
 @media only screen and (max-width: 1000px) {
   #toc {
     max-width: 200px;

@@ -14,7 +14,7 @@ that we will call `FavouritesList`. That means as before we will first create an
 ## FavouriteList Component
 
 ```js
-// app/js/components/FavouritesList/index.jsx
+// app/js/components/FavouritesList/index.js
 
 export { default } from './FavouritesList';
 ```

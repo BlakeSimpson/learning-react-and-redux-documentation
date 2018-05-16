@@ -37,8 +37,19 @@ class TableOfContents extends Component {
     return (
       <aside id="toc">
         <ul>
+          <h5>Intro</h5>
           <ToCEntry slug="/tutorial/getting-started" title="Getting Started" />
+
+          <h5>Step by Step Guide</h5>
           {this.renderDynamicPages()}
+
+          <h5>Bonus Steps</h5>
+          <ToCEntry
+            slug="/tutorial/bonus/react-router"
+            title="Navigation with React Router"
+          />
+
+          <h5>Information</h5>
           <ToCEntry slug="/tutorial/links" title="Links" />
         </ul>
       </aside>
