@@ -29,7 +29,7 @@ question name (a-map-of-thrones): a-map-of-thrones
 question version (1.0.0):
 question description: A React Tutorial of Ice and Fire
 question entry point (index.js):
-question repository url (git@github.com:BlakeSimpson/learning-react-and-redux-tutorial.git):
+question repository url (git@github.com:blake-simpson/learning-react-and-redux-tutorial.git):
 question author (Blake Simpson <blakersim@gmail.com>):
 question license (MIT):
 question private:
@@ -47,7 +47,7 @@ like:
   "description": "A React Tutorial of Ice and Fire",
   "main": "index.js",
   "repository":
-    "git@github.com:BlakeSimpson/learning-react-and-redux-tutorial.git",
+    "git@github.com:blake-simpson/learning-react-and-redux-tutorial.git",
   "author": "Blake Simpson <blakersim@gmail.com>",
   "license": "MIT"
 }

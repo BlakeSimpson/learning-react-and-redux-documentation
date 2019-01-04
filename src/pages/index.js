@@ -9,7 +9,7 @@ const IndexPage = ({ data }) => (
 
     <p>
       This is the documentation website for the{' '}
-      <a href="https://github.com/BlakeSimpson/learning-react-and-redux-tutorial">
+      <a href="https://github.com/blake-simpson/learning-react-and-redux-tutorial">
         Learning React and Redux tutorial
       </a>.
     </p>

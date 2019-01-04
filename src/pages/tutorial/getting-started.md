@@ -72,7 +72,7 @@ Studio Code, WebStorm, etc.
 
 When you are ready to begin clone the following repository:
 
-    git clone git@github.com:BlakeSimpson/learning-react-and-redux-tutorial.git
+    git clone git@github.com:blake-simpson/learning-react-and-redux-tutorial.git
 
 Every step of the tutorial has an associated git tag, so to have the starting
 point for step 9, you could simply checkout the git tag `step-9`. In that sense,
